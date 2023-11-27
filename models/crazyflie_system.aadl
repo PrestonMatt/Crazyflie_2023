@@ -13,6 +13,10 @@ public
   subcomponents
     nRF51822_Firmware : process Crazyflie_Software::nRF51822_Firmware;
     STM32F405_Firmware : process Crazyflie_Software::STM32F405_Firmware.impl;
+    -- Matthew Preston begin of addition for question Q8
+    --PMW3901MB_Firmware : process Crazyflie_Software::PMW3901MB_Firmware.impl;
+    VL53L0X_Firmware : process Crazyflie_Software::VL53L0X_Firmware.impl;
+    -- Matthew Preston end of addition for question Q8
 
   connections
     C10 : port nRF51822_Firmware.Syslink_Packet_TX
@@ -25,6 +29,11 @@ public
     C13 : port STM32F405_Firmware.Rate_2 -> M2.rate;
     C14 : port STM32F405_Firmware.Rate_3 -> M3.rate;
     C15 : port STM32F405_Firmware.Rate_4 -> M4.rate;
+    -- Matthew Preston begin of addition for question Q8
+    C19 : port PMW3901MB.DOF2 -> STM32F405_Firmware.DOF2s;
+    C20 : port VL53L0X.laser_range -> STM32F405_Firmware.lasers;
+    C21 : port VL53L0X_Firmware.spi_bus_TX -> STM32F405_Firmware.Lasers;
+    -- Matthew Preston end of addition for question Q8
 
   flows
     -- etef1 represents the functional chain from MPU9250 IMU to STM32
@@ -55,6 +64,29 @@ public
     etef8 : end to end flow nRF51822_Firmware.f1 -> C10 -> STM32F405_Firmware.f8
       -> C15 -> M4.f1 { latency => 0 ms .. 2 ms;}; 
 	-- Matthew Preston end of addition for question Q2
+	
+	-- Matthew Preston begin of addition for question Q8
+	-- These flows are from the camera to the motors
+	etef9 : end to end flow PMW3901MB.f1 -> C19 -> STM32F405_Firmware.f9
+      -> C12 -> M1.f1 { latency => 0 ms .. 2 ms;};
+    etef10 : end to end flow PMW3901MB.f1 -> C19 -> STM32F405_Firmware.f10
+      -> C13 -> M2.f1 { latency => 0 ms .. 2 ms;};
+    etef11 : end to end flow PMW3901MB.f1 -> C19 -> STM32F405_Firmware.f11
+      -> C14 -> M3.f1 { latency => 0 ms .. 2 ms;};
+    etef12 : end to end flow PMW3901MB.f1 -> C19 -> STM32F405_Firmware.f12
+      -> C15 -> M4.f1 { latency => 0 ms .. 2 ms;};
+      
+    -- These flows are from the Lazer to the motors
+    etef13 : end to end flow VL53L0X_Firmware.f1 -> C21 -> STM32F405_Firmware.f13
+      -> C12 -> M1.f1 { latency => 0 ms .. 2 ms;};
+    etef14 : end to end flow VL53L0X_Firmware.f1 -> C21 -> STM32F405_Firmware.f14
+      -> C13 -> M2.f1 { latency => 0 ms .. 2 ms;};
+    etef15 : end to end flow VL53L0X_Firmware.f1 -> C21 -> STM32F405_Firmware.f15
+      -> C14 -> M3.f1 { latency => 0 ms .. 2 ms;};
+    etef16 : end to end flow VL53L0X_Firmware.f1 -> C21 -> STM32F405_Firmware.f16
+      -> C15 -> M4.f1 { latency => 0 ms .. 2 ms;};  
+	
+	-- Matthew Preston begin of addition for question Q8
 
   properties
     Actual_Processor_Binding => (reference (STM32F405)) applies to STM32F405_Firmware;
@@ -63,16 +95,22 @@ public
     Actual_Connection_Binding => (reference (UART)) applies to C10;
     Actual_Connection_Binding => (reference (I2C)) applies to C11;
     
+    -- Matthew Preston begin of addition for question Q8
+    -- Actual_Connection_Binding => (reference (I2C)) applies to C18;
+    -- Matthew Preston begin of addition for question Q8
+    
     Cheddar_Transformation_Properties::Exported_Attribute_Time_Units => MicroSecond;
     Cheddar_Transformation_Properties::Transform_Sporadic_To_Periodic => true;
   annex EMV2 {**
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
     composite error behavior
-    states
+   
+    states 
       [ MPU9250.Operational and STM32F405.Operational]-> Operational;   
       [ MPU9250.Failed or STM32F405.Failed]-> Failed;       
     end composite;  
+    
         
     connection error
        C10_err : error source C10{ValueErroneous}; 

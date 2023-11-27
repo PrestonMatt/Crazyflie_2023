@@ -131,3 +131,49 @@ WARNING,Jitter of actual latency total 0.600..9.60ms exceeds expected end to end
 
 
 
+"Latency results for end-to-end flow 'f_etef6' of system 'Crazyflie_Functional_Chain.impl' "
+
+Result,Min Specified,Min Actual,Min Method,Max Specified,Max Actual,Max Method,Comments
+abstract Camera (source f1),0.0ms,0.0ms,first sampling,0.0ms,0.0ms,first sampling
+abstract Camera (source f1),0.1ms,0.1ms,specified,0.3ms,0.3ms,specified
+connection Camera.Opt_Out -> Flow_Deck.Camera_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Flow_Deck (path f2),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Flow_Deck (path f2),0.2ms,0.2ms,specified,0.4ms,0.4ms,specified
+connection Flow_Deck.Controller_Out -> Controller.Data_F_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Controller (path f1),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Controller (path f1),0.2ms,0.2ms,specified,0.4ms,0.4ms,specified
+connection Controller.Motor_Out -> Motors.Motor_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Motors (sink f1),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Motors (sink f1),0.1ms,0.1ms,specified,0.5ms,0.5ms,specified
+Latency Total,0.6ms,0.6ms,,1.6ms,7.6ms
+Specified End To End Latency,,0.0ms,,,2.0ms
+End to end Latency Summary
+INFO,Minimum actual latency total 0.600ms is greater or equal to expected minimum end to end latency 0.000ms
+ERROR,Maximum actual latency total 7.60ms exceeds expected maximum end to end latency 2.00ms
+WARNING,Jitter of actual latency total 0.600..7.60ms exceeds expected end to end latency jitter 0.000..2.00ms
+
+
+
+"Latency results for end-to-end flow 'f_etef7' of system 'Crazyflie_Functional_Chain.impl' "
+
+Result,Min Specified,Min Actual,Min Method,Max Specified,Max Actual,Max Method,Comments
+abstract Lazer (source f1),0.0ms,0.0ms,first sampling,0.0ms,0.0ms,first sampling
+abstract Lazer (source f1),0.1ms,0.1ms,specified,0.3ms,0.3ms,specified
+connection Lazer.Lazr_Out -> Flow_Deck.Lazer_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Flow_Deck (path f1),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Flow_Deck (path f1),0.2ms,0.2ms,specified,0.4ms,0.4ms,specified
+connection Flow_Deck.Controller_Out -> Controller.Data_F_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Controller (path f1),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Controller (path f1),0.2ms,0.2ms,specified,0.4ms,0.4ms,specified
+connection Controller.Motor_Out -> Motors.Motor_In,0.0ms,0.0ms,no sampling/queuing latency,0.0ms,0.0ms,no sampling/queuing latency
+abstract Motors (sink f1),0.0ms,0.0ms,sampling,0.0ms,2.0ms,sampling,Best case 0 ms worst case 2.0ms (period) sampling delay
+abstract Motors (sink f1),0.1ms,0.1ms,specified,0.5ms,0.5ms,specified
+Latency Total,0.6ms,0.6ms,,1.6ms,7.6ms
+Specified End To End Latency,,0.0ms,,,2.0ms
+End to end Latency Summary
+INFO,Minimum actual latency total 0.600ms is greater or equal to expected minimum end to end latency 0.000ms
+ERROR,Maximum actual latency total 7.60ms exceeds expected maximum end to end latency 2.00ms
+WARNING,Jitter of actual latency total 0.600..7.60ms exceeds expected end to end latency jitter 0.000..2.00ms
+
+
+

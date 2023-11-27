@@ -120,7 +120,7 @@ public
   -- Matthew end begin of addition for Q2
 
   -- Matthew Preston begin of addition for Q8
-  -- This is the VL53L0x ToF chip (lazer sensor)
+  -- This is the VL53L0x ToF chip (laser sensor)
   abstract Lazer
   	features
     Lazr_Out : out data port;

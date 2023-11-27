@@ -65,28 +65,28 @@ public
     Dispatch_Protocol => Periodic;
     Period            => 50 ms;
     
-  annex EMV2
-   {**
-     use types Crazyflie_Errors;
-     use behavior Crazyflie_Errors::simple;
+  --annex EMV2
+  -- {**
+  --   use types Crazyflie_Errors;
+  --   use behavior Crazyflie_Errors::simple;
 
-     error propagations
-       DOF2 : out propagation{ValueErroneous};
-     flows
-       f1 : error source DOF2{ValueErroneous} when failed;
-     end propagations; 
+  --   error propagations
+  --     DOF2 : out propagation{ValueErroneous};
+  --   flows
+  --     f1 : error source DOF2{ValueErroneous} when failed;
+  --   end propagations; 
  
-     properties
-       EMV2::hazards => 
-        ([  crossreference => "N/A";
-            failure => "Lense value error";
-            phases => ("in flight");
-            description => "Camera starts to send an erroneous value";
-            comment => "Can be critical if not detected by the health monitoring";
-        ]) applies to DOF2.ValueErroneous;
+  --  properties
+  --     EMV2::hazards => 
+  --      ([  crossreference => "N/A";
+  --          failure => "Lense value error";
+  --          phases => ("in flight");
+  --          description => "Camera starts to send an erroneous value";
+  --          comment => "Can be critical if not detected by the health monitoring";
+  --      ]) applies to DOF2.ValueErroneous;
                 
-      EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to DOF2.ValueErroneous;     
-   **};
+  --    EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to DOF2.ValueErroneous;     
+  -- **};
   end PMW3901MB;
   
   -----------------
@@ -129,28 +129,28 @@ public
     -- Device_Properties::Device_Frequency => 400Khz;
     -- Page 20/40 ^ 
     
-  annex EMV2
-   {**
-     use types Crazyflie_Errors;
-     use behavior Crazyflie_Errors::simple;
+  --annex EMV2
+  -- {**
+  --   use types Crazyflie_Errors;
+  --   use behavior Crazyflie_Errors::simple;
 
-     error propagations
-       laser_range : out propagation{ValueErroneous};
-     flows
-       f1 : error source laser_range{ValueErroneous} when failed;
-     end propagations; 
+  --   error propagations
+  --     laser_range : out propagation{ValueErroneous};
+  --   flows
+  --     f1 : error source laser_range{ValueErroneous} when failed;
+  --   end propagations; 
  
-     properties
-       EMV2::hazards => 
-        ([  crossreference => "N/A";
-            failure => "Lazer range value error";
-            phases => ("in flight");
-            description => "Lazer Range is too far away--needs to be <2m";
-            comment => "Can be critical if within actual range";
-        ]) applies to laser_range.ValueErroneous;
+  --   properties
+  --     EMV2::hazards => 
+  --      ([  crossreference => "N/A";
+  --          failure => "Lazer range value error";
+  --          phases => ("in flight");
+  --          description => "Lazer Range is too far away--needs to be <2m";
+  --          comment => "Can be critical if within actual range";
+  --      ]) applies to laser_range.ValueErroneous;
                 
-      EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to laser_range.ValueErroneous;     
-   **};
+  --    EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to laser_range.ValueErroneous;     
+  -- **};
   end VL53L0X;
 
   -- Matthew Preston end of addition for question Q8
@@ -328,7 +328,9 @@ public
     C9 : bus access STM32F405.pwm_bus -> PWM;
     
     -- Matthew Preston begin of addition for question Q8
-    -- TODO: Add connections for DECK FLOW.
+    C16 : bus access VL53L0X.i2c_bus -> i2c;
+    C17 : bus access PMW3901MB.spi_bus -> spi;
+    C18 : bus access STM32F405.spi_bus -> spi;
     -- Matthew Preston end of addition for question Q8
 
   end Crazyflie.impl;

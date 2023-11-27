@@ -16,6 +16,10 @@ public
     Syslink_Packet_Rx : in data port Crazyflie_Types::Syslink_Packet;
     Syslink_Packet_Tx : out data port Crazyflie_Types::Syslink_Packet;
     DOFs           : in data port Crazyflie_Types::Six_Axis.impl;
+	-- Matthew Preston begin of addition for question Q8
+	DOF2s : in data port Crazyflie_Types::Two_Axis.impl;
+	Lasers : in data port Crazyflie_Types::laser_range.impl;
+	-- Matthew Preston end of addition for question Q8
 
     Rate_1         : out data port Crazyflie_Types::PWM_Rate;
     Rate_2         : out data port Crazyflie_Types::PWM_Rate;
@@ -35,6 +39,18 @@ public
     f7 : flow path Syslink_Packet_Rx -> Rate_3;
     f8 : flow path Syslink_Packet_Rx -> Rate_4;
     -- Matthew Preston end of addition for question Q2
+    -- Matthew Preston begin of addition for question Q8
+    f9 : flow path DOF2s -> Rate_1;
+    f10 : flow path DOF2s -> Rate_2;
+    f11 : flow path DOF2s -> Rate_3;
+    f12 : flow path DOF2s -> Rate_4;
+    f13 : flow path Lasers -> Rate_1;
+    f14 : flow path Lasers -> Rate_2;
+    f15 : flow path Lasers -> Rate_3;
+    f16 : flow path Lasers -> Rate_4;
+    -- Matthew Preston end of addition for question Q8
+    
+    
   annex EMV2 {**
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
@@ -105,6 +121,110 @@ public
   end STM32F405_Firmware.impl;
 
   -- Matthew Preston begin of addition for question Q8
+
+  -- Camera
+  process PMW3901MB_Firmware
+  	features
+  		i2c_bus_TX: out data port Crazyflie_Types::Two_Axis;
+  		i2c_bus_RX: in data port Crazyflie_Types::Syslink_Packet;
+  	flows
+  		f1: flow source i2c_bus_TX{ latency => 1 ms .. 2 ms; };
+  		-- This should be the same latency as the other wires.
+  end PMW3901MB_Firmware;
+  
+  -- Laser
+  process VL53L0X_Firmware
+  	features
+  		spi_bus_TX: out data port Crazyflie_Types::laser_range.impl;
+  		spi_bus_RX: in data port Crazyflie_Types::Syslink_Packet;
+  	flows
+  		f1: flow source spi_bus_TX{ latency => 1 ms .. 2 ms; };
+  		-- This should be the same latency as the other wires.
+  end VL53L0X_Firmware;
+  
+  --process implementation PMW3901MB_Firmware.impl
+  --subcomponents
+  --  Camera_Tx_Task     : thread Camera_Tx_Task;
+  -- Flow_Deck_Rx_Task     : thread Flow_Deck_Rx_Task;
+
+  --connections
+  --  C18 : port Camera_Tx_Task.Msg -> i2c_bus_TX;
+  --  C19 : port Flow_Deck_Rx_Task.I2C_Packet_out -> Camera_Tx_Task.Syslink_Packet;
+  --  C20 : port DOF2 -> 
+
+  --flows
+  --	f1 : flow path DOF2	
+  --end PMW3901MB_Firmware.impl;
+
+  process implementation VL53L0X_Firmware.impl
+  subcomponents
+  	Laser_Tx_Task     : thread Laser_Tx_Task;
+    Flow_Deck_Rx_Task     : thread Flow_Deck_Rx_Task;
+    Initialization_and_Calibration        : thread Initialization_and_Calibration;
+    Ranging : thread Ranging;
+    Digital_Housekeeping : thread Digital_Housekeeping;  	
+    
+  end VL53L0X_Firmware.impl;
+
+  --thread Camera_Tx_Task
+  --features
+  --	Msg: out data port Crazyflie_Types::Two_Axis;
+  --	Syslink_Packet : in data port Crazyflie_Types::Syslink_Packet;
+  --properties
+  --  Priority => 2;
+  --  Dispatch_Protocol => Sporadic;
+  --  Period => 50 us; -- justification in hardware file.
+  --  Compute_Execution_Time => 45 us .. 100 us; -- justification in hardware file.
+  --end Camera_Tx_Task;
+
+  thread Laser_Tx_Task
+  features
+  	Msg: out data port Crazyflie_Types::Syslink_Packet;
+  	I2C_Packet : in data port Crazyflie_Types::Syslink_Packet;
+  properties
+    Priority => 2;
+    Dispatch_Protocol => Sporadic;
+    Period => 3900 us;
+    Compute_Execution_Time => 1300 us .. 1301 us;
+  end Laser_Tx_Task;
+
+  thread Flow_Deck_Rx_Task
+  features
+  	Msg: out data port Crazyflie_Types::Syslink_Packet;
+  	I2C_Packet_in : in data port Crazyflie_Types::Syslink_Packet;
+  	I2C_Packet_out : out data port Crazyflie_Types::Syslink_Packet;
+  	SPI_Packet_in : in data port Crazyflie_Types::Syslink_Packet;
+  	SPI_Packet_out : in data port Crazyflie_Types::Syslink_Packet;
+  properties
+    Priority => 2;
+    Dispatch_Protocol => Sporadic;
+    Period => 1000 us; -- guess consistent with other bus
+    Compute_Execution_Time => 10 us .. 50 us; -- guess consistent with other bus
+  end Flow_Deck_Rx_Task;
+  
+  thread Initialization_and_Calibration
+  properties
+  	Priority => 2;
+    Dispatch_Protocol => Sporadic;
+    Period => 99999 us; -- Done once
+    Compute_Execution_Time => 41000 us .. 45000 us; -- consistent page 14/40 of laser datasheet
+  end Initialization_and_Calibration;
+  
+  thread Ranging
+  properties
+  	Priority => 2;
+    Dispatch_Protocol => Sporadic;
+    Period => 10000 us; -- Done continuously
+    Compute_Execution_Time => 31000 us .. 35000 us; -- consistent page 14/40 of laser datasheet
+  end Ranging;
+  
+  thread Digital_Housekeeping
+  	properties
+  	Priority => 2;
+    Dispatch_Protocol => Sporadic;
+    Period => 10000 us; -- Done continuously
+    Compute_Execution_Time => 8000 us .. 9000 us; -- consistent page 14/40 of laser datasheet
+  end Digital_Housekeeping;
 
   -- Matthew Preston end of addition for question Q8
 

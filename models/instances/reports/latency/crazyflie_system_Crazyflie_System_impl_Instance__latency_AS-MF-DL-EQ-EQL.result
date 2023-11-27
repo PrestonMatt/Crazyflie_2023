@@ -31,7 +31,7 @@
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.2"/>
@@ -41,7 +41,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -62,9 +62,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs2"/>
       <diagnostics diagnosticType="INFO" message="Best case 0 ms worst case 2.0ms (period) sampling delay">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -75,9 +75,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs2"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -87,7 +87,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.12"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.17"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -98,15 +98,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -116,7 +116,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.0"/>
   </results>
@@ -148,7 +148,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.13"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -158,7 +158,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -169,15 +169,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.01"/>
@@ -188,9 +188,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -200,7 +200,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@connectionInstance.0"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@connectionInstance.0"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -211,9 +211,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Max: Worst case: Round up sampling delay to period 1.0ms">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -224,9 +224,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -236,7 +236,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.12"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.17"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -247,15 +247,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -265,7 +265,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.1"/>
   </results>
@@ -294,7 +294,7 @@
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.2"/>
@@ -304,7 +304,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -325,9 +325,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs3"/>
       <diagnostics diagnosticType="INFO" message="Best case 0 ms worst case 2.0ms (period) sampling delay">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -338,9 +338,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs3"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -350,7 +350,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.13"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.18"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -361,15 +361,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -379,7 +379,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.2"/>
   </results>
@@ -408,7 +408,7 @@
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.2"/>
@@ -418,7 +418,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -439,9 +439,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs4"/>
       <diagnostics diagnosticType="INFO" message="Best case 0 ms worst case 2.0ms (period) sampling delay">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -452,9 +452,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs4"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -464,7 +464,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.14"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.19"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -475,15 +475,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -493,7 +493,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.3"/>
   </results>
@@ -522,7 +522,7 @@
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="first sampling"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.2"/>
@@ -532,7 +532,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.4"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -550,7 +550,7 @@
         <values xsi:type="result:StringValue" value="queued"/>
         <values xsi:type="result:StringValue" value="queued"/>
         <values xsi:type="result:StringValue" value=""/>
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.2"/>
       </subResults>
       <subResults>
         <values xsi:type="result:RealValue"/>
@@ -560,7 +560,7 @@
         <values xsi:type="result:StringValue" value="sampling protocol/bus"/>
         <values xsi:type="result:StringValue" value="sampling protocol/bus"/>
         <values xsi:type="result:StringValue" value=""/>
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.2"/>
       </subResults>
       <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.0"/>
     </subResults>
@@ -573,9 +573,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs5"/>
       <diagnostics diagnosticType="INFO" message="Best case 0 ms worst case 2.0ms (period) sampling delay">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -586,9 +586,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs5"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -598,7 +598,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.20"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -609,15 +609,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -627,7 +627,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.4"/>
   </results>
@@ -659,7 +659,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.13"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -669,7 +669,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -680,15 +680,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.01"/>
@@ -699,9 +699,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -711,7 +711,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@connectionInstance.0"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@connectionInstance.0"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -722,9 +722,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs6"/>
       <diagnostics diagnosticType="INFO" message="Max: Worst case: Round up sampling delay to period 1.0ms">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -735,9 +735,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs6"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -747,7 +747,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.13"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.18"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -758,15 +758,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -776,7 +776,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.5"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.5"/>
   </results>
@@ -808,7 +808,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.13"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -818,7 +818,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -829,15 +829,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.01"/>
@@ -848,9 +848,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -860,7 +860,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@connectionInstance.0"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@connectionInstance.0"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -871,9 +871,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs7"/>
       <diagnostics diagnosticType="INFO" message="Max: Worst case: Round up sampling delay to period 1.0ms">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -884,9 +884,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs7"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -896,7 +896,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.14"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.19"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -907,15 +907,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -925,7 +925,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.6"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.6"/>
   </results>
@@ -957,7 +957,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="source f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.13"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -975,7 +975,7 @@
         <values xsi:type="result:StringValue" value="queued"/>
         <values xsi:type="result:StringValue" value="queued"/>
         <values xsi:type="result:StringValue" value=""/>
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.0"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.1"/>
       </subResults>
       <subResults>
         <values xsi:type="result:RealValue"/>
@@ -985,9 +985,9 @@
         <values xsi:type="result:StringValue" value="sampling protocol/bus"/>
         <values xsi:type="result:StringValue" value="sampling protocol/bus"/>
         <values xsi:type="result:StringValue" value=""/>
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.0"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.1"/>
       </subResults>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.10"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -998,15 +998,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.01"/>
@@ -1017,9 +1017,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs1"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.1"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.1"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -1029,7 +1029,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@connectionInstance.0"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@connectionInstance.0"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -1040,9 +1040,9 @@
       <values xsi:type="result:StringValue" value="sampling"/>
       <values xsi:type="result:StringValue" value="path fs8"/>
       <diagnostics diagnosticType="INFO" message="Max: Worst case: Round up sampling delay to period 1.0ms">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -1053,9 +1053,9 @@
       <values xsi:type="result:StringValue" value="processing time"/>
       <values xsi:type="result:StringValue" value="path fs8"/>
       <diagnostics diagnosticType="INFO" message="Using execution time as deadline was not set">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.11/@componentInstance.3"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.14/@componentInstance.3"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -1065,7 +1065,7 @@
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
       <values xsi:type="result:StringValue" value=""/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.15"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@connectionInstance.20"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue"/>
@@ -1076,15 +1076,15 @@
       <values xsi:type="result:StringValue" value="queued"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
       <diagnostics diagnosticType="INFO" message="Data port as queue size 1 for sporadic, aperiodic, timed dispatch">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Sporadic or periodic has period delay per queue element">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
       <diagnostics diagnosticType="INFO" message="Assume best case empty queue">
-        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+        <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
       </diagnostics>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
     </subResults>
     <subResults>
       <values xsi:type="result:RealValue" value="0.1"/>
@@ -1094,7 +1094,7 @@
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="specified"/>
       <values xsi:type="result:StringValue" value="sink f1"/>
-      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.7"/>
+      <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@componentInstance.8"/>
     </subResults>
     <modelElement href="../../crazyflie_system_Crazyflie_System_impl_Instance.aaxl2#//@endToEndFlow.7"/>
   </results>

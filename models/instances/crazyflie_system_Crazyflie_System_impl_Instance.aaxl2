@@ -16,6 +16,11 @@
     </ownedValue>
     <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.5"/>
   </ownedPropertyAssociation>
+  <componentInstance name="SPI" category="bus">
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedBusSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:BusImplementation" href="../../library/buses-spi.aadl#Buses.SPI.SPI.impl"/>
+  </componentInstance>
   <componentInstance name="UART" category="bus">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../library/bus_properties.aadl#Bus_Properties.Available_Bandwidth"/>
@@ -40,7 +45,7 @@
       </ownedValue>
       <propertyAssociation href="../../library/buses-uart.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
-    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusSubcomponent.0"/>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedBusSubcomponent.1"/>
     <index>0</index>
     <classifier xsi:type="aadl2:BusImplementation" href="../../library/buses-uart.aadl#Buses.UART.UART.impl"/>
   </componentInstance>
@@ -54,12 +59,12 @@
       </ownedValue>
       <propertyAssociation href="../../library/buses-i2c.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
-    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusSubcomponent.1"/>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedBusSubcomponent.2"/>
     <index>0</index>
     <classifier xsi:type="aadl2:BusImplementation" href="../../library/buses-i2c.aadl#Buses.I2C.I2C.impl"/>
   </componentInstance>
   <componentInstance name="PWM" category="bus">
-    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusSubcomponent.2"/>
+    <subcomponent xsi:type="aadl2:BusSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedBusSubcomponent.3"/>
     <index>0</index>
     <classifier xsi:type="aadl2:BusType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.PWM"/>
   </componentInstance>
@@ -71,7 +76,7 @@
           <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
@@ -80,7 +85,7 @@
           <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.1"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
     </ownedPropertyAssociation>
     <featureInstance name="DOF6" direction="out">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -92,12 +97,12 @@
         </ownedValue>
         <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataPort.0"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
     </featureInstance>
     <featureInstance name="i2c_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
     </featureInstance>
-    <flowSpecification name="f1" destination="//@componentInstance.3/@featureInstance.0">
+    <flowSpecification name="f1" destination="//@componentInstance.4/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
         <ownedValue>
@@ -110,11 +115,11 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
-      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedFlowSpecification.0"/>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
     </flowSpecification>
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDeviceSubcomponent.0"/>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.0"/>
     <index>0</index>
     <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.MPU9250"/>
   </componentInstance>
@@ -126,7 +131,7 @@
           <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <featureInstance name="rate">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -156,74 +161,10 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
     </featureInstance>
     <featureInstance name="pwm_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
-    </featureInstance>
-    <flowSpecification name="f1" source="//@componentInstance.4/@featureInstance.0">
-      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
-        <ownedValue>
-          <ownedValue xsi:type="aadl2:RangeValue">
-            <minimum xsi:type="aadl2:IntegerLiteral" value="100">
-              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
-            </minimum>
-            <maximum xsi:type="aadl2:IntegerLiteral" value="100">
-              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
-            </maximum>
-          </ownedValue>
-        </ownedValue>
-        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
-      </ownedPropertyAssociation>
-      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
-    </flowSpecification>
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDeviceSubcomponent.1"/>
-    <index>0</index>
-    <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.Propeller"/>
-  </componentInstance>
-  <componentInstance name="M2" category="device">
-    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
-      <ownedValue>
-        <ownedValue xsi:type="aadl2:NamedValue">
-          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
-        </ownedValue>
-      </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
-    </ownedPropertyAssociation>
-    <featureInstance name="rate">
-      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
-        <ownedValue>
-          <ownedValue xsi:type="aadl2:NamedValue">
-            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.6"/>
-          </ownedValue>
-        </ownedValue>
-        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
-      </ownedPropertyAssociation>
-      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Number_Representation"/>
-        <ownedValue>
-          <ownedValue xsi:type="aadl2:NamedValue">
-            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.13/@ownedPropertyType/@ownedLiteral.1"/>
-          </ownedValue>
-        </ownedValue>
-        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
-      </ownedPropertyAssociation>
-      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
-        <ownedValue>
-          <ownedValue xsi:type="aadl2:IntegerLiteral" value="1">
-            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.15/@ownedLiteral.1"/>
-          </ownedValue>
-        </ownedValue>
-        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
-      </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
-    </featureInstance>
-    <featureInstance name="pwm_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusAccess.0"/>
     </featureInstance>
     <flowSpecification name="f1" source="//@componentInstance.5/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -238,15 +179,15 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
-      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0"/>
     </flowSpecification>
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDeviceSubcomponent.2"/>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.1"/>
     <index>0</index>
     <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.Propeller"/>
   </componentInstance>
-  <componentInstance name="M3" category="device">
+  <componentInstance name="M2" category="device">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
       <ownedValue>
@@ -254,7 +195,7 @@
           <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <featureInstance name="rate">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -284,10 +225,10 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
     </featureInstance>
     <featureInstance name="pwm_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusAccess.0"/>
     </featureInstance>
     <flowSpecification name="f1" source="//@componentInstance.6/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -302,15 +243,15 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
-      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0"/>
     </flowSpecification>
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDeviceSubcomponent.3"/>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.2"/>
     <index>0</index>
     <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.Propeller"/>
   </componentInstance>
-  <componentInstance name="M4" category="device">
+  <componentInstance name="M3" category="device">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
       <ownedValue>
@@ -318,7 +259,7 @@
           <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <featureInstance name="rate">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -348,10 +289,10 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
     </featureInstance>
     <featureInstance name="pwm_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusAccess.0"/>
     </featureInstance>
     <flowSpecification name="f1" source="//@componentInstance.7/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -366,13 +307,187 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
-      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0"/>
     </flowSpecification>
-    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDeviceSubcomponent.4"/>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.3"/>
     <index>0</index>
     <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.Propeller"/>
+  </componentInstance>
+  <componentInstance name="M4" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="rate">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.6"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Number_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.13/@ownedPropertyType/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Memory_Properties.aadl#Memory_Properties.Data_Size"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="1">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.15/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="pwm_bus" category="busAccess">
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedBusAccess.0"/>
+    </featureInstance>
+    <flowSpecification name="f1" source="//@componentInstance.8/@featureInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="100">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="100">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.4"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.Propeller"/>
+  </componentInstance>
+  <componentInstance name="PMW3901MB" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="50">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="DOF2" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="spi_bus" category="busAccess">
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.0"/>
+    </featureInstance>
+    <flowSpecification name="f1" destination="//@componentInstance.9/@featureInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="45">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="100">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.5"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.PMW3901MB"/>
+  </componentInstance>
+  <componentInstance name="VL53L0X" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="39">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="laser_range" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="i2c_bus" category="busAccess">
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusAccess.0"/>
+    </featureInstance>
+    <flowSpecification name="f1" destination="//@componentInstance.10/@featureInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="1300">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="1301">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedDeviceSubcomponent.6"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:DeviceType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.VL53L0X"/>
   </componentInstance>
   <componentInstance name="STM32F405" category="processor">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -382,7 +497,7 @@
           <unit href="../../library/processor_properties.aadl#/0/@ownedPropertyType.0/@ownedUnitsType/@ownedLiteral.2"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Scheduling_Protocol"/>
@@ -393,7 +508,7 @@
           </ownedListElement>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.1"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../library/processor_properties.aadl#Processor_Properties.Processor_Family"/>
@@ -423,18 +538,18 @@
       <propertyAssociation href="../../library/processors-arm.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
     </ownedPropertyAssociation>
     <featureInstance name="i2c_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.0"/>
     </featureInstance>
     <featureInstance name="spi_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.1"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.1"/>
     </featureInstance>
     <featureInstance name="uart_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.2"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.2"/>
     </featureInstance>
     <featureInstance name="pwm_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedBusAccess.3"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedBusAccess.3"/>
     </featureInstance>
-    <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedProcessorSubcomponent.0"/>
+    <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedProcessorSubcomponent.0"/>
     <index>0</index>
     <classifier xsi:type="aadl2:ProcessorType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.STM32F405"/>
   </componentInstance>
@@ -446,7 +561,7 @@
           <unit href="../../library/processor_properties.aadl#/0/@ownedPropertyType.0/@ownedUnitsType/@ownedLiteral.2"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.1"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Scheduling_Protocol"/>
@@ -457,7 +572,7 @@
           </ownedListElement>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="../../library/processor_properties.aadl#Processor_Properties.Processor_Family"/>
@@ -487,9 +602,9 @@
       <propertyAssociation href="../../library/processors-arm.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
     </ownedPropertyAssociation>
     <featureInstance name="uart_bus" category="busAccess">
-      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedBusAccess.0"/>
+      <feature xsi:type="aadl2:BusAccess" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedBusAccess.0"/>
     </featureInstance>
-    <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedProcessorSubcomponent.1"/>
+    <subcomponent xsi:type="aadl2:ProcessorSubcomponent" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedProcessorSubcomponent.1"/>
     <index>0</index>
     <classifier xsi:type="aadl2:ProcessorType" href="../crazyflie_hardware.aadl#Crazyflie_Hardware.nRF51822"/>
   </componentInstance>
@@ -498,7 +613,7 @@
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
       <ownedValue>
         <ownedValue xsi:type="aadl2:ListValue">
-          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.9"/>
+          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.12"/>
         </ownedValue>
       </ownedValue>
       <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
@@ -509,7 +624,7 @@
     <featureInstance name="Syslink_Packet_RX">
       <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedDataPort.1"/>
     </featureInstance>
-    <flowSpecification name="f1" destination="//@componentInstance.10/@featureInstance.0">
+    <flowSpecification name="f1" destination="//@componentInstance.13/@featureInstance.0">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
         <ownedValue>
@@ -535,7 +650,7 @@
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
       <ownedValue>
         <ownedValue xsi:type="aadl2:ListValue">
-          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
+          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.11"/>
         </ownedValue>
       </ownedValue>
       <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
@@ -557,6 +672,30 @@
         <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.2"/>
+    </featureInstance>
+    <featureInstance name="DOF2s">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.3"/>
+    </featureInstance>
+    <featureInstance name="Lasers">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.4"/>
     </featureInstance>
     <featureInstance name="Rate_1" direction="out">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -586,7 +725,7 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.3"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.5"/>
     </featureInstance>
     <featureInstance name="Rate_2" direction="out">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -616,7 +755,7 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.4"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.6"/>
     </featureInstance>
     <featureInstance name="Rate_3" direction="out">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -646,7 +785,7 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.5"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.7"/>
     </featureInstance>
     <featureInstance name="Rate_4" direction="out">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -676,14 +815,14 @@
         </ownedValue>
         <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
-      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.6"/>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDataPort.8"/>
     </featureInstance>
     <componentInstance name="CRTP_Tx_Task" category="thread">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:ListValue">
-            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.11"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
@@ -695,7 +834,7 @@
             <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
@@ -704,14 +843,14 @@
             <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.2"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
@@ -725,13 +864,13 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedPropertyAssociation.3"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="Msg" direction="out">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.0"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedDataPort.0"/>
       </featureInstance>
       <featureInstance name="Syslink_Packet">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.3/@ownedDataPort.1"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedDataPort.1"/>
       </featureInstance>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedThreadSubcomponent.0"/>
       <index>0</index>
@@ -742,7 +881,7 @@
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:ListValue">
-            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.11"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
@@ -754,7 +893,7 @@
             <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
@@ -763,14 +902,14 @@
             <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.2"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
@@ -784,16 +923,16 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.3"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="Msg">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedDataPort.0"/>
       </featureInstance>
       <featureInstance name="Syslink_Packet" direction="out">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedDataPort.1"/>
       </featureInstance>
-      <flowSpecification name="fs1" source="//@componentInstance.11/@componentInstance.1/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.1/@featureInstance.1">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      <flowSpecification name="fs1" source="//@componentInstance.14/@componentInstance.1/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.1/@featureInstance.1">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedFlowSpecification.0"/>
       </flowSpecification>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedThreadSubcomponent.1"/>
       <index>0</index>
@@ -804,7 +943,7 @@
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:ListValue">
-            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.11"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
@@ -816,7 +955,7 @@
             <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
@@ -825,14 +964,14 @@
             <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.2"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
@@ -846,7 +985,7 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.3"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedThreadSubcomponent.2"/>
       <index>0</index>
@@ -857,7 +996,7 @@
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:ListValue">
-            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.11"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
@@ -869,7 +1008,7 @@
             <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
@@ -878,14 +1017,14 @@
             <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.2"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="3"/>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
@@ -899,7 +1038,7 @@
             </maximum>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.3"/>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="DOFs">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -911,13 +1050,13 @@
           </ownedValue>
           <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
         </ownedPropertyAssociation>
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.0"/>
       </featureInstance>
       <featureInstance name="Syslink_Packet_Rx">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.1"/>
       </featureInstance>
       <featureInstance name="Syslink_Packet_Tx" direction="out">
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.2"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.2"/>
       </featureInstance>
       <featureInstance name="Rate_1" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -947,7 +1086,7 @@
           </ownedValue>
           <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
         </ownedPropertyAssociation>
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.3"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.3"/>
       </featureInstance>
       <featureInstance name="Rate_2" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -977,7 +1116,7 @@
           </ownedValue>
           <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
         </ownedPropertyAssociation>
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.4"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.4"/>
       </featureInstance>
       <featureInstance name="Rate_3" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -1007,7 +1146,7 @@
           </ownedValue>
           <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
         </ownedPropertyAssociation>
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.5"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.5"/>
       </featureInstance>
       <featureInstance name="Rate_4" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -1037,67 +1176,91 @@
           </ownedValue>
           <propertyAssociation href="platform:/plugin/org.osate.contribution.sei/resources/packages/Base_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
         </ownedPropertyAssociation>
-        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.6"/>
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.6"/>
       </featureInstance>
-      <flowSpecification name="fs1" source="//@componentInstance.11/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.3">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.0"/>
+      <flowSpecification name="fs1" source="//@componentInstance.14/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.3">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.0"/>
       </flowSpecification>
-      <flowSpecification name="fs2" source="//@componentInstance.11/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.3">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.1"/>
+      <flowSpecification name="fs2" source="//@componentInstance.14/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.3">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.1"/>
       </flowSpecification>
-      <flowSpecification name="fs3" source="//@componentInstance.11/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.4">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.2"/>
+      <flowSpecification name="fs3" source="//@componentInstance.14/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.4">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.2"/>
       </flowSpecification>
-      <flowSpecification name="fs4" source="//@componentInstance.11/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.5">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.3"/>
+      <flowSpecification name="fs4" source="//@componentInstance.14/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.5">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.3"/>
       </flowSpecification>
-      <flowSpecification name="fs5" source="//@componentInstance.11/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.6">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.4"/>
+      <flowSpecification name="fs5" source="//@componentInstance.14/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.6">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.4"/>
       </flowSpecification>
-      <flowSpecification name="fs6" source="//@componentInstance.11/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.4">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.5"/>
+      <flowSpecification name="fs6" source="//@componentInstance.14/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.4">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.5"/>
       </flowSpecification>
-      <flowSpecification name="fs7" source="//@componentInstance.11/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.5">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.6"/>
+      <flowSpecification name="fs7" source="//@componentInstance.14/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.5">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.6"/>
       </flowSpecification>
-      <flowSpecification name="fs8" source="//@componentInstance.11/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.6">
-        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedFlowSpecification.7"/>
+      <flowSpecification name="fs8" source="//@componentInstance.14/@componentInstance.3/@featureInstance.1" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.6">
+        <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedFlowSpecification.7"/>
       </flowSpecification>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedThreadSubcomponent.3"/>
       <index>0</index>
       <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Main_Loop"/>
     </componentInstance>
-    <flowSpecification name="f1" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.3">
+    <flowSpecification name="f1" source="//@componentInstance.14/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.5">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.0"/>
     </flowSpecification>
-    <flowSpecification name="f2" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.11/@featureInstance.3">
+    <flowSpecification name="f2" source="//@componentInstance.14/@featureInstance.2" destination="//@componentInstance.14/@featureInstance.5">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.1"/>
     </flowSpecification>
-    <flowSpecification name="f3" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.11/@featureInstance.4">
+    <flowSpecification name="f3" source="//@componentInstance.14/@featureInstance.2" destination="//@componentInstance.14/@featureInstance.6">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.2"/>
     </flowSpecification>
-    <flowSpecification name="f4" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.11/@featureInstance.5">
+    <flowSpecification name="f4" source="//@componentInstance.14/@featureInstance.2" destination="//@componentInstance.14/@featureInstance.7">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.3"/>
     </flowSpecification>
-    <flowSpecification name="f5" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.11/@featureInstance.6">
+    <flowSpecification name="f5" source="//@componentInstance.14/@featureInstance.2" destination="//@componentInstance.14/@featureInstance.8">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.4"/>
     </flowSpecification>
-    <flowSpecification name="f6" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.4">
+    <flowSpecification name="f6" source="//@componentInstance.14/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.6">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.5"/>
     </flowSpecification>
-    <flowSpecification name="f7" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.5">
+    <flowSpecification name="f7" source="//@componentInstance.14/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.7">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.6"/>
     </flowSpecification>
-    <flowSpecification name="f8" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.6">
+    <flowSpecification name="f8" source="//@componentInstance.14/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.8">
       <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.7"/>
     </flowSpecification>
-    <connectionInstance name="CRTP_Rx_Task.Syslink_Packet -> Main_Loop.Syslink_Packet_Rx" complete="true" kind="portConnection" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.1" source="//@componentInstance.11/@componentInstance.1/@featureInstance.1">
-      <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.1/@featureInstance.1" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.1">
+    <flowSpecification name="f9" source="//@componentInstance.14/@featureInstance.3" destination="//@componentInstance.14/@featureInstance.5">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.8"/>
+    </flowSpecification>
+    <flowSpecification name="f10" source="//@componentInstance.14/@featureInstance.3" destination="//@componentInstance.14/@featureInstance.6">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.9"/>
+    </flowSpecification>
+    <flowSpecification name="f11" source="//@componentInstance.14/@featureInstance.3" destination="//@componentInstance.14/@featureInstance.7">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.10"/>
+    </flowSpecification>
+    <flowSpecification name="f12" source="//@componentInstance.14/@featureInstance.3" destination="//@componentInstance.14/@featureInstance.8">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.11"/>
+    </flowSpecification>
+    <flowSpecification name="f13" source="//@componentInstance.14/@featureInstance.4" destination="//@componentInstance.14/@featureInstance.5">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.12"/>
+    </flowSpecification>
+    <flowSpecification name="f14" source="//@componentInstance.14/@featureInstance.4" destination="//@componentInstance.14/@featureInstance.6">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.13"/>
+    </flowSpecification>
+    <flowSpecification name="f15" source="//@componentInstance.14/@featureInstance.4" destination="//@componentInstance.14/@featureInstance.7">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.14"/>
+    </flowSpecification>
+    <flowSpecification name="f16" source="//@componentInstance.14/@featureInstance.4" destination="//@componentInstance.14/@featureInstance.8">
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFlowSpecification.15"/>
+    </flowSpecification>
+    <connectionInstance name="CRTP_Rx_Task.Syslink_Packet -> Main_Loop.Syslink_Packet_Rx" complete="true" kind="portConnection" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.1" source="//@componentInstance.14/@componentInstance.1/@featureInstance.1">
+      <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.1/@featureInstance.1" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.1">
         <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.3"/>
       </connectionReference>
     </connectionInstance>
-    <connectionInstance name="Main_Loop.Syslink_Packet_Tx -> CRTP_Tx_Task.Syslink_Packet" complete="true" kind="portConnection" destination="//@componentInstance.11/@componentInstance.0/@featureInstance.1" source="//@componentInstance.11/@componentInstance.3/@featureInstance.2">
-      <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.3/@featureInstance.2" destination="//@componentInstance.11/@componentInstance.0/@featureInstance.1">
+    <connectionInstance name="Main_Loop.Syslink_Packet_Tx -> CRTP_Tx_Task.Syslink_Packet" complete="true" kind="portConnection" destination="//@componentInstance.14/@componentInstance.0/@featureInstance.1" source="//@componentInstance.14/@componentInstance.3/@featureInstance.2">
+      <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.3/@featureInstance.2" destination="//@componentInstance.14/@componentInstance.0/@featureInstance.1">
         <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.1"/>
       </connectionReference>
     </connectionInstance>
@@ -1105,7 +1268,285 @@
     <index>0</index>
     <classifier xsi:type="aadl2:ProcessImplementation" href="../crazyflie_software.aadl#Crazyflie_Software.STM32F405_Firmware.impl"/>
   </componentInstance>
-  <endToEndFlow name="etef1" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.1 //@connectionInstance.12 //@componentInstance.4/@flowSpecification.0">
+  <componentInstance name="VL53L0X_Firmware" category="process">
+    <featureInstance name="spi_bus_TX" direction="out">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_types.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="spi_bus_RX">
+      <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <componentInstance name="Laser_Tx_Task" category="thread">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="3900">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="1300">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="1301">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <featureInstance name="Msg" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="I2C_Packet">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Laser_Tx_Task"/>
+    </componentInstance>
+    <componentInstance name="Flow_Deck_Rx_Task" category="thread">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="1000">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="10">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="50">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <featureInstance name="Msg" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="I2C_Packet_in">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance name="I2C_Packet_out" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance name="SPI_Packet_in">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDataPort.3"/>
+      </featureInstance>
+      <featureInstance name="SPI_Packet_out">
+        <feature xsi:type="aadl2:DataPort" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedDataPort.4"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Flow_Deck_Rx_Task"/>
+    </componentInstance>
+    <componentInstance name="Initialization_and_Calibration" category="thread">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="99999">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="41000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="45000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.2"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Initialization_and_Calibration"/>
+    </componentInstance>
+    <componentInstance name="Ranging" category="thread">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="10000">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="31000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="35000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.3"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Ranging"/>
+    </componentInstance>
+    <componentInstance name="Digital_Housekeeping" category="thread">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.1"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="10000">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Priority"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="8000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="9000">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedThreadSubcomponent.4"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadType" href="../crazyflie_software.aadl#Crazyflie_Software.Digital_Housekeeping"/>
+    </componentInstance>
+    <flowSpecification name="f1" destination="//@componentInstance.15/@featureInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="2">
+              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.2"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ProcessImplementation" href="../crazyflie_software.aadl#Crazyflie_Software.VL53L0X_Firmware.impl"/>
+  </componentInstance>
+  <endToEndFlow name="etef1" flowElement="//@componentInstance.4/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.1 //@connectionInstance.17 //@componentInstance.5/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1122,7 +1563,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.0"/>
   </endToEndFlow>
-  <endToEndFlow name="etef2" flowElement="//@componentInstance.10/@flowSpecification.0 //@connectionInstance.10 //@componentInstance.11/@componentInstance.1/@flowSpecification.0 //@componentInstance.11/@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.0 //@connectionInstance.12 //@componentInstance.4/@flowSpecification.0">
+  <endToEndFlow name="etef2" flowElement="//@componentInstance.13/@flowSpecification.0 //@connectionInstance.15 //@componentInstance.14/@componentInstance.1/@flowSpecification.0 //@componentInstance.14/@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.0 //@connectionInstance.17 //@componentInstance.5/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1139,7 +1580,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.1"/>
   </endToEndFlow>
-  <endToEndFlow name="etef3" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.2 //@connectionInstance.13 //@componentInstance.5/@flowSpecification.0">
+  <endToEndFlow name="etef3" flowElement="//@componentInstance.4/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.2 //@connectionInstance.18 //@componentInstance.6/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1156,7 +1597,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.2"/>
   </endToEndFlow>
-  <endToEndFlow name="etef4" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.3 //@connectionInstance.14 //@componentInstance.6/@flowSpecification.0">
+  <endToEndFlow name="etef4" flowElement="//@componentInstance.4/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.3 //@connectionInstance.19 //@componentInstance.7/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1173,7 +1614,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.3"/>
   </endToEndFlow>
-  <endToEndFlow name="etef5" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.4 //@connectionInstance.15 //@componentInstance.7/@flowSpecification.0">
+  <endToEndFlow name="etef5" flowElement="//@componentInstance.4/@flowSpecification.0 //@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.4 //@connectionInstance.20 //@componentInstance.8/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1190,7 +1631,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.4"/>
   </endToEndFlow>
-  <endToEndFlow name="etef6" flowElement="//@componentInstance.10/@flowSpecification.0 //@connectionInstance.10 //@componentInstance.11/@componentInstance.1/@flowSpecification.0 //@componentInstance.11/@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.5 //@connectionInstance.13 //@componentInstance.5/@flowSpecification.0">
+  <endToEndFlow name="etef6" flowElement="//@componentInstance.13/@flowSpecification.0 //@connectionInstance.15 //@componentInstance.14/@componentInstance.1/@flowSpecification.0 //@componentInstance.14/@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.5 //@connectionInstance.18 //@componentInstance.6/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1207,7 +1648,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.5"/>
   </endToEndFlow>
-  <endToEndFlow name="etef7" flowElement="//@componentInstance.10/@flowSpecification.0 //@connectionInstance.10 //@componentInstance.11/@componentInstance.1/@flowSpecification.0 //@componentInstance.11/@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.6 //@connectionInstance.14 //@componentInstance.6/@flowSpecification.0">
+  <endToEndFlow name="etef7" flowElement="//@componentInstance.13/@flowSpecification.0 //@connectionInstance.15 //@componentInstance.14/@componentInstance.1/@flowSpecification.0 //@componentInstance.14/@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.6 //@connectionInstance.19 //@componentInstance.7/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1224,7 +1665,7 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.6"/>
   </endToEndFlow>
-  <endToEndFlow name="etef8" flowElement="//@componentInstance.10/@flowSpecification.0 //@connectionInstance.10 //@componentInstance.11/@componentInstance.1/@flowSpecification.0 //@componentInstance.11/@connectionInstance.0 //@componentInstance.11/@componentInstance.3/@flowSpecification.7 //@connectionInstance.15 //@componentInstance.7/@flowSpecification.0">
+  <endToEndFlow name="etef8" flowElement="//@componentInstance.13/@flowSpecification.0 //@connectionInstance.15 //@componentInstance.14/@componentInstance.1/@flowSpecification.0 //@componentInstance.14/@connectionInstance.0 //@componentInstance.14/@componentInstance.3/@flowSpecification.7 //@connectionInstance.20 //@componentInstance.8/@flowSpecification.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
       <ownedValue>
@@ -1241,7 +1682,94 @@
     </ownedPropertyAssociation>
     <endToEndFlow href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.7"/>
   </endToEndFlow>
-  <connectionInstance name="MPU9250.DOF6 -> STM32F405_Firmware.Main_Loop.DOFs" complete="true" kind="portConnection" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.0" source="//@componentInstance.3/@featureInstance.0">
+  <connectionInstance name="MPU9250.DOF6 -> STM32F405_Firmware.Main_Loop.DOFs" complete="true" kind="portConnection" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.0" source="//@componentInstance.4/@featureInstance.0">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.2"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.3"/>
+    </ownedPropertyAssociation>
+    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.2">
+      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@featureInstance.2" destination="//@componentInstance.14/@componentInstance.3/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="MPU9250.i2c_bus -> I2C" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.4/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.1" destination="//@componentInstance.2">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="M1.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.3" source="//@componentInstance.5/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.3">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="M2.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.3" source="//@componentInstance.6/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.6/@featureInstance.1" destination="//@componentInstance.3">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.5"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="M3.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.3" source="//@componentInstance.7/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.7/@featureInstance.1" destination="//@componentInstance.3">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="M4.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.3" source="//@componentInstance.8/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.8/@featureInstance.1" destination="//@componentInstance.3">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.7"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="PMW3901MB.DOF2 -> STM32F405_Firmware.DOF2s" complete="true" kind="portConnection" destination="//@componentInstance.14/@featureInstance.3" source="//@componentInstance.9/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.9/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.3">
+      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.7"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="PMW3901MB.spi_bus -> SPI" complete="true" kind="accessConnection" destination="//@componentInstance.0" source="//@componentInstance.9/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.9/@featureInstance.1" destination="//@componentInstance.0">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.10"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="VL53L0X.laser_range -> STM32F405_Firmware.Lasers" complete="true" kind="portConnection" destination="//@componentInstance.14/@featureInstance.4" source="//@componentInstance.10/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.4">
+      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="VL53L0X.i2c_bus -> I2C" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.10/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.1" destination="//@componentInstance.2">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.9"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="STM32F405.i2c_bus -> I2C" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.11/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.2">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="STM32F405.spi_bus -> SPI" complete="true" kind="accessConnection" destination="//@componentInstance.0" source="//@componentInstance.11/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.1" destination="//@componentInstance.0">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.11"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="STM32F405.uart_bus -> UART" complete="true" kind="accessConnection" destination="//@componentInstance.1" source="//@componentInstance.11/@featureInstance.2">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.1">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="STM32F405.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.3" source="//@componentInstance.11/@featureInstance.3">
+    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.3" destination="//@componentInstance.3">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.8"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="nrf51822.uart_bus -> UART" complete="true" kind="accessConnection" destination="//@componentInstance.1" source="//@componentInstance.12/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.12/@featureInstance.0" destination="//@componentInstance.1">
+      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedAccessConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="nRF51822_Firmware.Syslink_Packet_TX -> STM32F405_Firmware.CRTP_Rx_Task.Msg" complete="true" kind="portConnection" destination="//@componentInstance.14/@componentInstance.1/@featureInstance.0" source="//@componentInstance.13/@featureInstance.0">
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
       <ownedValue>
@@ -1249,115 +1777,58 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.3"/>
-    </ownedPropertyAssociation>
-    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.2">
-      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
-    </connectionReference>
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@featureInstance.2" destination="//@componentInstance.11/@componentInstance.3/@featureInstance.0">
-      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.8"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="MPU9250.i2c_bus -> I2C" complete="true" kind="accessConnection" destination="//@componentInstance.1" source="//@componentInstance.3/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.3/@featureInstance.1" destination="//@componentInstance.1">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.3"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="M1.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.4/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.4/@featureInstance.1" destination="//@componentInstance.2">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.4"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="M2.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.5/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.2">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.5"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="M3.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.6/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.6/@featureInstance.1" destination="//@componentInstance.2">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.6"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="M4.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.7/@featureInstance.1">
-    <connectionReference context="/" source="//@componentInstance.7/@featureInstance.1" destination="//@componentInstance.2">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.7"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="STM32F405.i2c_bus -> I2C" complete="true" kind="accessConnection" destination="//@componentInstance.1" source="//@componentInstance.8/@featureInstance.0">
-    <connectionReference context="/" source="//@componentInstance.8/@featureInstance.0" destination="//@componentInstance.1">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.2"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="STM32F405.uart_bus -> UART" complete="true" kind="accessConnection" destination="//@componentInstance.0" source="//@componentInstance.8/@featureInstance.2">
-    <connectionReference context="/" source="//@componentInstance.8/@featureInstance.2" destination="//@componentInstance.0">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.0"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="STM32F405.pwm_bus -> PWM" complete="true" kind="accessConnection" destination="//@componentInstance.2" source="//@componentInstance.8/@featureInstance.3">
-    <connectionReference context="/" source="//@componentInstance.8/@featureInstance.3" destination="//@componentInstance.2">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.8"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="nrf51822.uart_bus -> UART" complete="true" kind="accessConnection" destination="//@componentInstance.0" source="//@componentInstance.9/@featureInstance.0">
-    <connectionReference context="/" source="//@componentInstance.9/@featureInstance.0" destination="//@componentInstance.0">
-      <connection xsi:type="aadl2:AccessConnection" href="../crazyflie_hardware.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedAccessConnection.1"/>
-    </connectionReference>
-  </connectionInstance>
-  <connectionInstance name="nRF51822_Firmware.Syslink_Packet_TX -> STM32F405_Firmware.CRTP_Rx_Task.Msg" complete="true" kind="portConnection" destination="//@componentInstance.11/@componentInstance.1/@featureInstance.0" source="//@componentInstance.10/@featureInstance.0">
-    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
-      <ownedValue>
-        <ownedValue xsi:type="aadl2:ListValue">
-          <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
-        </ownedValue>
-      </ownedValue>
       <propertyAssociation href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
     </ownedPropertyAssociation>
-    <connectionReference context="/" source="//@componentInstance.10/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.13/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
     </connectionReference>
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@featureInstance.0" destination="//@componentInstance.11/@componentInstance.1/@featureInstance.0">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@featureInstance.0" destination="//@componentInstance.14/@componentInstance.1/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.2"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="STM32F405_Firmware.CRTP_Tx_Task.Msg -> nRF51822_Firmware.Syslink_Packet_RX" complete="true" kind="portConnection" destination="//@componentInstance.10/@featureInstance.1" source="//@componentInstance.11/@componentInstance.0/@featureInstance.0">
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.0/@featureInstance.0" destination="//@componentInstance.11/@featureInstance.1">
+  <connectionInstance name="STM32F405_Firmware.CRTP_Tx_Task.Msg -> nRF51822_Firmware.Syslink_Packet_RX" complete="true" kind="portConnection" destination="//@componentInstance.13/@featureInstance.1" source="//@componentInstance.14/@componentInstance.0/@featureInstance.0">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.0/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.1">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.0"/>
     </connectionReference>
-    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.1" destination="//@componentInstance.10/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.14/@featureInstance.1" destination="//@componentInstance.13/@featureInstance.1">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_1 -> M1.rate" complete="true" kind="portConnection" destination="//@componentInstance.4/@featureInstance.0" source="//@componentInstance.11/@componentInstance.3/@featureInstance.3">
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.3/@featureInstance.3" destination="//@componentInstance.11/@featureInstance.3">
+  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_1 -> M1.rate" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.14/@componentInstance.3/@featureInstance.3">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.3/@featureInstance.3" destination="//@componentInstance.14/@featureInstance.5">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.4"/>
     </connectionReference>
-    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.3" destination="//@componentInstance.4/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.14/@featureInstance.5" destination="//@componentInstance.5/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_2 -> M2.rate" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.11/@componentInstance.3/@featureInstance.4">
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.3/@featureInstance.4" destination="//@componentInstance.11/@featureInstance.4">
+  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_2 -> M2.rate" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.14/@componentInstance.3/@featureInstance.4">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.3/@featureInstance.4" destination="//@componentInstance.14/@featureInstance.6">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.5"/>
     </connectionReference>
-    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.4" destination="//@componentInstance.5/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.14/@featureInstance.6" destination="//@componentInstance.6/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_3 -> M3.rate" complete="true" kind="portConnection" destination="//@componentInstance.6/@featureInstance.0" source="//@componentInstance.11/@componentInstance.3/@featureInstance.5">
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.3/@featureInstance.5" destination="//@componentInstance.11/@featureInstance.5">
+  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_3 -> M3.rate" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.14/@componentInstance.3/@featureInstance.5">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.3/@featureInstance.5" destination="//@componentInstance.14/@featureInstance.7">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.6"/>
     </connectionReference>
-    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.5" destination="//@componentInstance.6/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.14/@featureInstance.7" destination="//@componentInstance.7/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.5"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_4 -> M4.rate" complete="true" kind="portConnection" destination="//@componentInstance.7/@featureInstance.0" source="//@componentInstance.11/@componentInstance.3/@featureInstance.6">
-    <connectionReference context="//@componentInstance.11" source="//@componentInstance.11/@componentInstance.3/@featureInstance.6" destination="//@componentInstance.11/@featureInstance.6">
+  <connectionInstance name="STM32F405_Firmware.Main_Loop.Rate_4 -> M4.rate" complete="true" kind="portConnection" destination="//@componentInstance.8/@featureInstance.0" source="//@componentInstance.14/@componentInstance.3/@featureInstance.6">
+    <connectionReference context="//@componentInstance.14" source="//@componentInstance.14/@componentInstance.3/@featureInstance.6" destination="//@componentInstance.14/@featureInstance.8">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_software.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPortConnection.7"/>
     </connectionReference>
-    <connectionReference context="/" source="//@componentInstance.11/@featureInstance.6" destination="//@componentInstance.7/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.14/@featureInstance.8" destination="//@componentInstance.8/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.6"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="VL53L0X_Firmware.spi_bus_TX -> STM32F405_Firmware.Lasers" complete="true" kind="portConnection" destination="//@componentInstance.14/@featureInstance.4" source="//@componentInstance.15/@featureInstance.0">
+    <connectionReference context="/" source="//@componentInstance.15/@featureInstance.0" destination="//@componentInstance.14/@featureInstance.4">
+      <connection xsi:type="aadl2:PortConnection" href="../crazyflie_system.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.9"/>
     </connectionReference>
   </connectionInstance>
   <systemOperationMode name="No Modes"/>
