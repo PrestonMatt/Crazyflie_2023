@@ -29,8 +29,41 @@ public
     Gyro_X : data Base_Types::Integer_16;
     Gyro_Y : data Base_Types::Integer_16;
     Gyro_Z : data Base_Types::Integer_16;
+    -- Matthew Preston begin of addition for question Q2
+    -- Pressure : data Base_Types::Integer_16;
+    -- Magneto_X : data Base_Types::Integer_16;
+    -- Magneto_Y : data Base_Types::Integer_16;
+    -- Magneto_Z : data Base_Types::Integer_16;
+    -- Matthew Preston begin of addition for question Q2
 
   end Six_Axis.impl;
+  
+  -- Matthew Preston begin of addition for question Q8 
+  data Two_Axis
+  	properties
+  		Data_Model::Data_Representation => Struct;
+  end Two_Axis;
+  
+  data implementation Two_Axis.impl
+  subcomponents
+    Opt_X  : data Base_Types::Integer_16;
+    Opt_Y  : data Base_Types::Integer_16;
+
+  end Two_Axis.impl;
+  
+  data laser_range
+  	properties
+  		Data_Model::Data_Representation => Struct;
+  end laser_range;
+  
+  data implementation laser_range.impl
+  subcomponents
+    dist_up_to_2m  : data Base_Types::Integer_8;
+    -- As far as I can tell, the packets sent out from this module according to the data sheet is 8 bytes.
+
+  end laser_range.impl;
+  
+  -- Matthew Preston end of addition for question Q8 
 
   --------------------
   -- Syslink_Packet --

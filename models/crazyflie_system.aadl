@@ -39,6 +39,22 @@ public
 
     etef2 : end to end flow nRF51822_Firmware.f1 -> C10 -> STM32F405_Firmware.f1
       -> C12 -> M1.f1 { latency => 0 ms .. 2 ms;};
+      
+   	-- Matthew Preston begin of addition for question Q2
+   	etef3 : end to end flow MPU9250.f1 -> C11 -> STM32F405_Firmware.f3
+       -> C13 -> M2.f1 { latency => 0 ms .. 2 ms;};
+    etef4 : end to end flow MPU9250.f1 -> C11 -> STM32F405_Firmware.f4
+       -> C14 -> M3.f1 { latency => 0 ms .. 2 ms;};
+    etef5 : end to end flow MPU9250.f1 -> C11 -> STM32F405_Firmware.f5
+       -> C15 -> M4.f1 { latency => 0 ms .. 2 ms;};
+       
+    etef6 : end to end flow nRF51822_Firmware.f1 -> C10 -> STM32F405_Firmware.f6
+      -> C13 -> M2.f1 { latency => 0 ms .. 2 ms;};
+    etef7 : end to end flow nRF51822_Firmware.f1 -> C10 -> STM32F405_Firmware.f7
+      -> C14 -> M3.f1 { latency => 0 ms .. 2 ms;};
+    etef8 : end to end flow nRF51822_Firmware.f1 -> C10 -> STM32F405_Firmware.f8
+      -> C15 -> M4.f1 { latency => 0 ms .. 2 ms;}; 
+	-- Matthew Preston end of addition for question Q2
 
   properties
     Actual_Processor_Binding => (reference (STM32F405)) applies to STM32F405_Firmware;

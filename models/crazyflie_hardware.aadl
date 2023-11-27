@@ -12,6 +12,149 @@ public
   with Crazyflie_Errors;
   with EMV2;
 
+  -- Matthew Preston begin of addition for question Q8 
+  
+  ---------------
+  -- Flow Deck --
+  ---------------
+
+  -- VL53L0x ToF sensor to measure distance up to 2 meters
+  -- PMW3901MB datasheet
+  -- 1-wire memory for automatic expansion deck detection
+  -- Designed for mounting under the Crazyflie 2.0
+  -- Mechanical specification:
+  	-- Weight: 1.6g
+  	-- Size (WxHxD): 21x28x4mm
+
+  --------------------
+  -- PMW3901MB-TXQT --
+  --------------------
+
+  -- PMW3901MB-TXQT: Optical Motion Tracking Chip
+  -- * far field optics technology that enables navigation
+  -- * 28-pin chip-on-board (COB) package
+  -- * Wide working range from 80 mm to infinity
+  -- * Power consumption of 9 mA @ run mode
+  -- * 16-bits motion data registers
+  -- * Motion detect pin output
+  -- * Internal oscillator – no clock input needed
+  
+  -- Datasheet:
+  -- https://wiki.bitcraze.io/_media/projects:crazyflie2:expansionboards:pot0189-pmw3901mb-txqt-ds-r1.00-200317_20170331160807_public.pdf
+
+  device PMW3901MB
+  features
+    DOF2 : out data port Crazyflie_Types::two_Axis.impl;
+    spi_bus : requires bus access Buses::SPI::SPI.impl;
+    
+  -- Relevant timings from the data sheet:
+    -- SPI Time Between Write: 45 microseconds | From rising SCLK for last bit of the first data byte, to rising SCLK for last bit of the second data byte
+    -- SPI Time Between Write And Read Commands: 45 microseconds | From rising SCLK for last bit of the first data byte, to rising SCLK for last bit of the second address byte.
+  -- Irrelevant timings
+    -- SPI Time Between Read And Subsequent Commands : 20 microseconds | From rising SCLK for last bit of the first data byte, to falling SCLK for the first bit of the address byte of the next command.
+    -- SPI Read Address-Data Delay: 35 microseconds | From rising SCLK for last bit of the address byte, to falling SCLK for first bit of data being read.
+  flows
+    f1 : flow source DOF2 { latency => 45 us .. 100 us; };
+  -- If it is only doing a write-write-write data, then it will be 45 seconds between writes
+  -- If it needs to read, then it will have to do a write-read-read(between)-read-addr delay = 45 + 20 + 35 = 100 us
+    
+  -- Motion Delay After Reset: 50 ms | From reset to valid motion, assuming motion is present
+  -- Wake from Shutdown: 50 ms | From Shutdown mode inactive to valid motion. Notes: A RESET must be asserted after a shutdown. Refer to section “Notes on Shutdown”, also note tMOT-RST.
+  -- So either way, 50 ms.  
+  properties
+    Dispatch_Protocol => Periodic;
+    Period            => 50 ms;
+    
+  annex EMV2
+   {**
+     use types Crazyflie_Errors;
+     use behavior Crazyflie_Errors::simple;
+
+     error propagations
+       DOF2 : out propagation{ValueErroneous};
+     flows
+       f1 : error source DOF2{ValueErroneous} when failed;
+     end propagations; 
+ 
+     properties
+       EMV2::hazards => 
+        ([  crossreference => "N/A";
+            failure => "Lense value error";
+            phases => ("in flight");
+            description => "Camera starts to send an erroneous value";
+            comment => "Can be critical if not detected by the health monitoring";
+        ]) applies to DOF2.ValueErroneous;
+                
+      EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to DOF2.ValueErroneous;     
+   **};
+  end PMW3901MB;
+  
+  -----------------
+  -- VL53L0x ToF --
+  -----------------
+
+  -- VL53L0X is a Time-of-Flight (ToF) laser-ranging module
+  -- * measure absolute distances up to 2m
+  -- * integrates a leading-edge SPAD array (Single Photon Avalanche Diodes)
+  -- * embeds ST’s second generation FlightSense™ patented technology
+  
+  -- Datasheet:
+  -- https://www.digikey.com/en/htmldatasheets/production/1936270/0/0/1/vl53l0cxv0dh-1#pf10
+
+  device VL53L0X
+  features
+    laser_range : out data port Crazyflie_Types::laser_range.impl;
+    i2c_bus : requires bus access Buses::I2C::I2C.impl;
+    -- Note: GPIO1 to be left unconnected if not used
+    
+  -- A note on the latencies...this module can be in three modes (page 10/40 of datasheet):
+  -- Single (single use between resets)
+  -- Continuous (multiple use, next measurement ASAP)
+  -- Continuous Timed (multiple use, next measurement after set, desired timeframe)
+  -- Justified in the report, I will go with continuous, because it needs to be used as often as possible for obstacle collision avoidance.
+  -- Also see page 20/40 for I2C timing characteristics:
+  -- Bus free time between transmissions: 1.3 ms => 1300 us (minimum)
+  -- Data in hold time (may need): 0.9 us => rounded up to 1 us + 1301 us (maximum)
+  flows
+    f1 : flow source laser_range { latency => 1300 us .. 1301 us; };
+
+  -- Source: page 14/40 of data sheet:
+  -- Range set up: 8 ms
+  -- Range measurement: 23 ms
+  -- Digital processing: 8 ms
+  -- Total: 39 ms
+  properties
+    Dispatch_Protocol => Periodic;
+    Period            => 39 ms;
+    -- Device_Properties::Device_Frequency => 400Khz;
+    -- Page 20/40 ^ 
+    
+  annex EMV2
+   {**
+     use types Crazyflie_Errors;
+     use behavior Crazyflie_Errors::simple;
+
+     error propagations
+       laser_range : out propagation{ValueErroneous};
+     flows
+       f1 : error source laser_range{ValueErroneous} when failed;
+     end propagations; 
+ 
+     properties
+       EMV2::hazards => 
+        ([  crossreference => "N/A";
+            failure => "Lazer range value error";
+            phases => ("in flight");
+            description => "Lazer Range is too far away--needs to be <2m";
+            comment => "Can be critical if within actual range";
+        ]) applies to laser_range.ValueErroneous;
+                
+      EMV2::OccurrenceDistribution => [ ProbabilityValue => 3.4e-5 ; Distribution => Fixed;] applies to laser_range.ValueErroneous;     
+   **};
+  end VL53L0X;
+
+  -- Matthew Preston end of addition for question Q8
+
   ---------------
   -- STM32F405 --
   ---------------
@@ -78,7 +221,7 @@ public
 
   properties
     Scheduling_Protocol => (RMS);
-    Processor_Properties::PRocessor_Frequency => 168hz;
+    Processor_Properties::Processor_Frequency => 16Mhz;
     --  XXX memory components ?
   end nRF51822;
 
@@ -90,6 +233,9 @@ public
   features
     DOF6 : out data port Crazyflie_Types::Six_Axis.impl;
     i2c_bus : requires bus access Buses::I2C::I2C.impl;
+    -- Matthew Preston begin of addition for question Q2
+    -- DOF10 : out data port Crazyflie_Types::Twelve_Axis.impl;
+    -- Matthew Preston end			 of addition for question Q2
 
   flows
     f1 : flow source DOF6 { latency => 200 us .. 500 us; };
@@ -158,7 +304,12 @@ public
     M2 : device Propeller;
     M3 : device Propeller;
     M4 : device Propeller;
-
+	-- Matthew Preston begin of addition for question Q8
+	PMW3901MB: device PMW3901MB;
+	VL53L0X: device VL53L0X;
+	
+	SPI : bus Buses::SPI::SPI.impl;
+	-- Matthew Preston end of addition for question Q8
     UART : bus Buses::UART::UART.impl;
     I2C : bus Buses::I2C::I2C.impl;
     PWM : bus PWM;
@@ -175,6 +326,10 @@ public
     C7 : bus access M3.pwm_bus -> PWM;
     C8 : bus access M4.pwm_bus -> PWM;
     C9 : bus access STM32F405.pwm_bus -> PWM;
+    
+    -- Matthew Preston begin of addition for question Q8
+    -- TODO: Add connections for DECK FLOW.
+    -- Matthew Preston end of addition for question Q8
 
   end Crazyflie.impl;
 

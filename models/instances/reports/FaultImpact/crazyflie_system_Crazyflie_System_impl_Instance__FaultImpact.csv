@@ -1,0 +1,5 @@
+Fault Impact of System Internal Error Sources
+
+Component, Initial Failure Mode, 1st Level Effect, Failure Mode, second Level Effect, Failure Mode, third Level Effect, Failure Mode, 4th Level Effect, Failure Mode, 5th Level Effect, Failure Mode, 6th Level Effect, Failure Mode, 7th Level Effect, More
+MPU9250,Failed,{ValueErroneous} DOF6 -> STM32F405_Firmware:DOFs, STM32F405_Firmware {ValueErroneous},{ValueErroneous} Rate_1 -> [No Outgoing Connection],,
+STM32F405,{ValueErroneous},{ValueErroneous} bindings -> STM32F405_Firmware:processor, STM32F405_Firmware {ValueErroneous},{ValueErroneous} Rate_1 -> [No Outgoing Connection],,

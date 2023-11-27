@@ -25,6 +25,16 @@ public
   flows
     f1 : flow path Syslink_Packet_Rx -> Rate_1;
     f2 : flow path DOFs              -> Rate_1;
+    -- Matthew Preston begin of addition for question Q2
+    f3 : flow path DOFs              -> Rate_2;
+    f4 : flow path DOFs              -> Rate_3;
+    f5 : flow path DOFs              -> Rate_4;
+    -- Matthew Preston end of addition for question Q2
+    -- Matthew Preston begin of addition for question Q2
+    f6 : flow path Syslink_Packet_Rx -> Rate_2;
+    f7 : flow path Syslink_Packet_Rx -> Rate_3;
+    f8 : flow path Syslink_Packet_Rx -> Rate_4;
+    -- Matthew Preston end of addition for question Q2
   annex EMV2 {**
     use types Crazyflie_Errors;
     use behavior Crazyflie_Errors::simple;
@@ -79,7 +89,24 @@ public
     f1 : flow path Syslink_Packet_Rx -> C2 -> CRTP_Rx_Task.fs1 -> C7
       -> Main_Loop.fs1 -> C3 -> Rate_1;
     f2 : flow path DOFs -> C9 -> Main_Loop.fs2 -> C3 -> Rate_1;
+    -- Matthew Preston begin of addition for question Q2
+    f3 : flow path DOFs -> C9 -> Main_Loop.fs3 -> C4 -> Rate_2;
+    f4 : flow path DOFs -> C9 -> Main_Loop.fs4 -> C5 -> Rate_3;
+    f5 : flow path DOFs -> C9 -> Main_Loop.fs5 -> C6 -> Rate_4;
+    -- Matthew Preston end of addition for question Q2
+    -- Matthew Preston begin of addition for question Q2
+    f6 : flow path Syslink_Packet_Rx -> C2 -> CRTP_Rx_Task.fs1 -> C7
+      -> Main_Loop.fs6 -> C4 -> Rate_2;
+    f7 : flow path Syslink_Packet_Rx -> C2 -> CRTP_Rx_Task.fs1 -> C7
+      -> Main_Loop.fs7 -> C5 -> Rate_3;
+    f8 : flow path Syslink_Packet_Rx -> C2 -> CRTP_Rx_Task.fs1 -> C7
+      -> Main_Loop.fs8 -> C6 -> Rate_4;
+    -- Matthew Preston end of addition for question Q2
   end STM32F405_Firmware.impl;
+
+  -- Matthew Preston begin of addition for question Q8
+
+  -- Matthew Preston end of addition for question Q8
 
   thread CRTP_Tx_Task
   features
@@ -128,6 +155,14 @@ public
   flows
     fs1 : flow path Syslink_Packet_Rx -> Rate_1;
     fs2 : flow path DOFs              -> Rate_1;
+    -- Matthew Preston begin of addition for question Q2
+    fs3 : flow path DOFs              -> Rate_2;
+    fs4 : flow path DOFs              -> Rate_3;
+    fs5 : flow path DOFs              -> Rate_4;
+    fs6 : flow path Syslink_Packet_Rx -> Rate_2;
+    fs7 : flow path Syslink_Packet_Rx -> Rate_3;
+    fs8 : flow path Syslink_Packet_Rx -> Rate_4;
+    -- Matthew Preston end of addition for question Q2
 
   properties
     Priority => 3;
